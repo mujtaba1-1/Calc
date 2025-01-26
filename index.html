@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+            <div id="output-container"></div>
+            <div id="extra-functions-container">
+                <button id="delete" class="button" onclick="deleteLastCharacter()">
+                    <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 351.121">
+                        <path fill-rule="nonzero" d="M341.162 27.594H47.164c-5.367 0-10.258 2.211-13.809 5.762-3.55 3.551-5.761 8.442-5.761 13.808v256.788c0 5.366 2.211 10.263 5.761 13.814 3.551 3.551 8.442 5.761 13.809 5.761h295.315c29.805-2.411 61.912-48.51 93.045-93.239 13.242-19.015 26.328-37.817 39.616-53.705-16.128-19.152-31.437-40.704-46.236-61.556-32.302-45.481-62.095-87.433-87.742-87.433zm-178.96 72.885c-9.261-9.404-24.324-9.45-33.636-.086-9.313 9.347-9.347 24.559-.092 33.963l40.641 41.219-40.681 41.265c-9.192 9.33-9.061 24.444.269 33.756 9.341 9.319 24.352 9.29 33.533-.04l40.412-40.972 40.48 41.059c9.267 9.403 24.324 9.449 33.636.08 9.307-9.348 9.353-24.559.092-33.963l-40.641-41.219 40.687-41.265c9.186-9.33 9.061-24.444-.275-33.762-9.336-9.313-24.352-9.29-33.533.045l-40.412 40.973-40.48-41.053zM47.164 0h293.998c39.787 0 73.555 47.536 110.158 99.082 16.684 23.499 34.031 47.925 52.324 68.303l8.356 9.307-8.465 9.232c-14.673 16.002-29.919 37.903-45.377 60.102-35.136 50.48-71.378 102.524-114.877 105.038l-296.117.057c-12.978 0-24.776-5.309-33.315-13.848C5.309 328.734 0 316.93 0 303.952V47.164c0-12.978 5.309-24.776 13.849-33.315C22.388 5.309 34.186 0 47.164 0z"/>
+                    </svg>
+                </button>
+            </div>
+            <hr>
+            <div id="button-container">
+                <button class="button" id="clear" onclick="addToOutput(this)">C</button>
+                <button class="button operators" id="parenthesis" onclick="addParenthesis()">( )</button>
+                <button class="button operators" onclick="addOperator(this)">%</button>
+                <button class="button operators" onclick="addOperator(this)">÷</button>
+
+                <button class="button" onclick="addToOutput(this)">7</button>
+                <button class="button" onclick="addToOutput(this)">8</button>
+                <button class="button" onclick="addToOutput(this)">9</button>
+                <button class="button operators" onclick="addOperator(this)">x</button>
+
+                <button class="button" onclick="addToOutput(this)">4</button>
+                <button class="button" onclick="addToOutput(this)">5</button>
+                <button class="button" onclick="addToOutput(this)">6</button>
+                <button class="button operators" onclick="addOperator(this)">-</button>
+
+                <button class="button" onclick="addToOutput(this)">1</button>
+                <button class="button" onclick="addToOutput(this)">2</button>
+                <button class="button" onclick="addToOutput(this)">3</button>
+                <button class="button operators" onclick="addOperator(this)">+</button>
+
+                <button class="button" onclick="addPoint(this)">.</button>
+                <button class="button" onclick="addToOutput(this)">0</button>
+                <button class="button" id="equals">=</button>
+            </div>
+        </main>
+    </body>
+    <script src="script.js"></script>
+</html>

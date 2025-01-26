@@ -1,0 +1,108 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+}
+
+main {
+    width: 80%;
+    max-width: 300px;
+    margin: auto;
+}
+
+#output-container {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 2em;
+    padding: 10px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#extra-functions-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+#delete {
+    width: 40px; 
+    height: 40px; 
+    transform: rotate(180deg);
+    background-color: black;
+    border: none;
+}
+
+#delete svg {
+    fill: white;
+    width: 24px;
+    height: 24px;
+}
+
+#button-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.button {
+    width: 100%;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    background-color: #171717;
+    border: 1px solid #1E1E1E;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.button:hover, #delete:hover {
+    background-color: #333;
+}
+
+#equals:hover {
+    background-color: #2A4D0A;
+}
+
+.button:active, #delete:active {
+    transform: scale(0.9);
+}
+
+#parenthesis {
+    font-size: 1.2em;
+}
+
+.operators {
+    color: #9FCF65;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#equals {
+    background-color: #427E04;
+    font-size: 2.5em;
+    color: white; 
+}
+
+#clear {
+    color: #C57B6E;
+}
+
+hr {
+    border: 1px solid #1A1A1A
+}

@@ -4,6 +4,8 @@ Only a small percentage of people actually know "calc" is short for calculator. 
 This project is an attempt at recreating Samsung's calculator app for their phone using raw HTML/CSS and JavaScript.
 Currently it can perform only basic arithmetic calculations
 
+Try it out here: https://mujtaba1-1.github.io/Calc/
+
 SAMSUNG CALCULATOR:
 
 ![image](https://github.com/user-attachments/assets/54f6381b-4fec-40f1-90ec-9f2c5663a6d3)

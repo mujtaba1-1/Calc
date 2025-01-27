@@ -110,3 +110,25 @@ const deleteLastCharacter = () => {
 };
 
 document.getElementById("equals").addEventListener("click", calculate);
+
+const buttons = Array.from(document.getElementsByClassName("button"));
+
+document.addEventListener("keydown", e => {
+    if (e.key === "Enter") {
+        calculate();
+        return;
+    }
+    else if (e.key === "Backspace") {
+        deleteLastCharacter();
+        return;
+    }
+    buttons.forEach(el => {
+        if (e.key === el.textContent || 
+            (e.key === "*" && el.textContent === "x") || 
+            (e.key === "/" && el.textContent === "÷") ||
+            (e.key === "(" && el.textContent === "( )") ||
+            (e.key === ")" && el.textContent === "( )")) {
+            el.click();
+        }
+    });
+});
